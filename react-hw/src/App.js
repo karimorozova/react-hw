@@ -3,14 +3,17 @@
 // import Stats from './Components/Stats/Stats';
 // import user from './user.json'
 // import data from './data.json'
-import friends from './friends.json'
-import FriendList from './Components/FriendList/FriendList';
+// import friends from './friends.json'
+// import FriendList from './Components/FriendList/FriendList';
+import TransactionHistory from './Components/TransactionHistory'
+import transactions from './transactions.json'
 
 function App() {
   return (
    
     <div className="App">
-      <FriendList friends={friends}/>
+      {/* <FriendList friends={friends}/> */}
+      <TransactionHistory transactions={transactions}/>
        
       {/* <Profile
         username={user.username}
