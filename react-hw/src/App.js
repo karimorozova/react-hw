@@ -1,9 +1,8 @@
 
 import Profile from './Components/Profile';
-import Statistics from './Components/Statistics';
+import Stats from './Components/Stats/Stats';
 import user from './user.json'
 import data from './data.json'
-console.log(data);
 
 function App() {
   return (
@@ -19,9 +18,11 @@ function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title={user.username}/>
+      <Stats title={'Kari'} stats={data} />
+      <Stats stats={data} />
       
     </div>
+    
   );
 }
 
