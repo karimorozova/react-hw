@@ -1,0 +1,21 @@
+.status {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+}
+
+.false {
+    composes: status;
+    background-color: red;
+}
+.true {
+    composes: status;
+    background-color: green;
+}
+
+.item {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
